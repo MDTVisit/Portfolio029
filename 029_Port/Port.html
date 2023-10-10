@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="game.js"></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'> 
+    <title>Portfolio029</title>
+</head>
+<body>
+
+    <div class="grid-container">
+        <div id="header">
+            <h3>Portfolio  </h3>             
+            <h5>
+                <em>By:นายวิศิษฎ์ มโนมัยวิศิษฎ์
+            </h5>
+                <hr>
+            </em>
+        </div>
+        <div id="Face">        
+            <img src="Me.jpg" alt="Me" /> </div>
+        
+            <div id="History">
+                <ul> <h1>
+                    <p>นายวิศิษฎ์ มโนมัยวิศิษฎ์ : ไจ่ไจ๋</p>
+                        <p>อายุ 17 ปี เกิดวันที่ 24 มิถุนายน 2546</p>
+                            <p>สถานที่เกิด โรงพยาบาลเกษมราษฎร์​บางแค</p>
+                                <p>หมู่เลือด:B สัญชาติ:ไทย</p>
+                                    <p>เชื้อชาติ:ไทย ศาสนา:พุทธ</p>
+            </ul> </h1>
+
+            </div>
+        
+            <div id="Skill">
+                <h1>
+                    <button onclick="showNextMaya()" style="background-color: black; color: green">Maya</button>
+                    <button onclick="showNextImage()" style="background-color: black; color: green">Art</button>
+                    <button onclick="showNextDesiger()" style="background-color: black; color: green">Desige</button>
+                    <button onclick="showNextStory()" style="background-color: black; color: green">Story</button>
+                    <button onclick="showNextEdit()" style="background-color: black; color: green">Edit</button>
+                    <p id="Hello">ผลงาน</p>
+                </h1>
+                <img id="test" src="Maya/Maya1.jpg" alt="Maya">
+            </div>
+            
+            <script>
+                const Maya = ["Maya/Maya1.jpg", "Maya/Maya2.jpg", "Maya/Maya3.jpg","Maya/Maya4.jpg","Maya/Maya5.jpg","Maya/Maya6.png","Maya/Maya7.png","Maya/Maya8.png","Maya/Maya9.jpg","Maya/Maya10.jpg"];
+                let currentMayaIndex = 0;
+            
+                function showNextMaya() {
+                    currentMayaIndex = (currentMayaIndex + 1) % Maya.length;
+                    const mayaElement = document.getElementById("test");
+                    mayaElement.src = Maya[currentMayaIndex];
+                }
+            </script>
+
+                <script>
+                const images = ["Art/Art 1.jpg", "Art/Art 2.png", "Art/Art 3.png","Art/Art 4.png", "Art/Art 5.png", "Art/Art 6.png","Art/Art 7.png","Art/Art 8.jpg","Art/character.jpg","Art/Banner.png"];
+                let currentImageIndex = 0;
+
+                function showNextImage() {
+                    currentImageIndex = (currentImageIndex + 1) % images.length;
+                    const imageElement = document.getElementById("test");
+                    imageElement.src = images[currentImageIndex];
+                }
+                </script>
+            
+            <script>
+                const Desiger = ["Desige/Desige.png", "Desige/Menu.png", "Desige/Mindmap.png","Desige/UI.png"];
+                let currentDesigerIndex = 0;
+
+                function showNextDesiger() {
+                    currentDesigerIndex = (currentDesigerIndex + 1) % Desiger.length;
+                    const desigerElement = document.getElementById("test");
+                    desigerElement.src = Desiger[currentDesigerIndex];
+                }
+            </script>
+
+        <script>
+            const Story = ["Story/Map_1.png", "Story/Map_2.jpg", "Story/Story_1.jpg","Story/Story_2.jpg","Story/Story_3.jpg","Story/Story_4.jpg","Story/Story_5.jpg","Story/Story_9.jpg"];
+            let currentStoryIndex = 0;
+
+            function showNextStory() {
+                currentStoryIndex = (currentStoryIndex + 1) % Story.length;
+                const storyElement = document.getElementById("test");
+                storyElement.src = Story[currentStoryIndex];
+            }
+        </script>
+
+            <script>
+            const Edit = ["ตัดต่อ/edit.png", "ตัดต่อ/edit2.png"];
+            let currentEditIndex = 0;
+
+            function showNextEdit() {
+                currentEditIndex = (currentEditIndex + 1) % Edit.length;
+                const editElement = document.getElementById("test");
+                editElement.src = Edit[currentEditIndex];
+            }
+            </script>  
+    </div> 
+
+    
+
+    <h2>ผลงาน Animate</h2>
+    
+    <ul> <h1>
+        <a href="https://youtu.be/95LpPWziHFo">Animate</a></p> 
+    </ul> <hr></h1>
+
+    <h2>งานอดิเรก</h2>
+    
+        <ul> <h1>
+            <li>การเขียนเนื้อเรื่อง</li>
+            <li>ดูหนัง</li>
+            <li>เล่นเกม</li>
+            <li>อ่านหนังสือ</li>
+        </ul> <hr></h1>
+
+
+        <h2>ความสามารถ </h2>
+        <ul> <h1>
+            <li>การเขียนเนื้อเรื่อง World Building</li>
+            <li>การปั้น Maya object</li>
+            <li>การตัดต่อ</li>
+        </ul> <hr></h1>
+
+        <h2>ความสนใจ</h2><h1>
+            
+        <ol>
+            <li>ประวัติศาสตร์</li>
+            <li>ศึกษาเกี่ยวกับธรรมชาติ</li>
+            <li>ศึกษาเกี่ยวกับดาราศาสตร์</li>
+        </ol> <hr></h1>
+
+		<form name="myLogin" id="myLogin">
+            <fieldset>
+                <legend>Login</legend>
+                Username: 
+                <input type="text" name="username" id="username" required>
+                <br>
+                Password: 
+                <input type="password" name="password" required>
+                <br>
+                <input type="submit" value="Login">
+                <input type="reset" value="Clear">
+            </fieldset>
+        </form>
+
+
+
+		<div id="container">
+			<div id="layer"></div>
+		</div>
+            
+
+    <h2>ช่องทางการติดต่อ 
+        <a href="https://www.facebook.com/manomaivisit">Facebook</a></p> 
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Youtube</a></p>
+
+        <hr>
+
+</body>
+</html>
